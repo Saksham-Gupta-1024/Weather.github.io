@@ -36,15 +36,15 @@ section {
   padding: 0 80px;
   margin: auto;
 }
-.about,
-.services,
+.forecast,
+.history,
 .contact,
 footer {
   font-family: "Poppins", sans-serif;
 }
-.about .about-content,
+.forecast .forecast-content,
 .home-content,
-.services .serv-content,
+.history .his-content,
 .contact .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -336,17 +336,17 @@ section .title::after {
   width: 50px;
 }
 
-/* about section styling */
-.about .title::after {
+/* forecast section styling */
+.forecast .title::after {
   content: "next 3 days";
 }
-.about .about-content .left {
+.forecast .forecast-content .left {
   width: 45%;
 }
-.about .about-content .right {
+.forecast .forecast-content .right {
   width: 55%;
 }
-.about .about-content .card {
+.forecast .forecast-content .card {
   width: calc(33% - 20px);
   background: gainsboro;
   text-align: center;
@@ -355,29 +355,29 @@ section .title::after {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.about .about-content .card:hover {
+.forecast .forecast-content .card:hover {
   background: #ff8800;
 }
-.about .about-content .card .box {
+.forecast .forecast-content .card .box {
   transition: all 0.3s ease;
 }
-.about .about-content .card:hover .box {
+.forecast .forecast-content .card:hover .box {
   transform: scale(1.05);
 }
-.about .about-content .card i {
+.forecast .forecast-content .card i {
   font-size: 50px;
   color: #ff8800;
   transition: color 0.3s ease;
 }
-.about .about-content .card:hover i {
+.forecast .forecast-content .card:hover i {
   color: #fff;
 }
-.about .about-content .card .text {
+.forecast .forecast-content .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
-.about .about-content .flip-card {
+.forecast .forecast-content .flip-card {
   background-color: transparent;
   width: 380px;
   height: 500px;
@@ -387,7 +387,7 @@ section .title::after {
   cursor: pointer;
 }
 
-.about .about-content .flip-card-inner {
+.forecast .forecast-content .flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -397,11 +397,11 @@ section .title::after {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.about .about-content .flip-card:hover .flip-card-inner {
+.forecast .forecast-content .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.about .about-content .flip-card-front,
+.forecast .forecast-content .flip-card-front,
 .flip-card-back {
   position: absolute;
   width: 100%;
@@ -410,7 +410,7 @@ section .title::after {
   backface-visibility: hidden;
 }
 
-.about .about-content .flip-card-front {
+.forecast .forecast-content .flip-card-front {
   background-color: gainsboro;
   color: black;
   border-radius: 6px;
@@ -418,25 +418,25 @@ section .title::after {
   cursor: pointer;
 }
 
-.about .about-content .flip-card-front i {
+.forecast .forecast-content .flip-card-front i {
   font-size: 50px;
   color: #ff8800;
   transition: color 0.3s ease;
 }
 
-.about .about-content .flip-card-front img {
+.forecast .forecast-content .flip-card-front img {
   font-size: 50px;
   color: #ff8800;
   transition: color 0.3s ease;
 }
 
-.about .about-content .flip-card-front .text {
+.forecast .forecast-content .flip-card-front .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
 
-.about .about-content .flip-card-front .bottom {
+.forecast .forecast-content .flip-card-front .bottom {
   border: none;
   border-radius: 6px;
   outline: 0;
@@ -451,20 +451,20 @@ section .title::after {
   margin-top: 30px;
 }
 
-.about .about-content .flip-card-front h1 {
+.forecast .forecast-content .flip-card-front h1 {
   font-size: 36px;
   font-weight: 600;
   margin: 10px 0 7px 0;
 }
 
-.about .about-content .flip-card-front p {
+.forecast .forecast-content .flip-card-front p {
   font-size: 18px;
   font-weight: 400;
   color: gray;
   margin: 10px 0 7px 0;
 }
 
-.about .about-content .flip-card-back {
+.forecast .forecast-content .flip-card-back {
   background-color: #ff8800;
   color: white;
   transform: rotateY(180deg);
@@ -473,60 +473,60 @@ section .title::after {
   cursor: pointer;
 }
 
-.about .about-content .flip-card-back table {
+.forecast .forecast-content .flip-card-back table {
   width: 100%;
 }
 
-.about .about-content .flip-card-back table img {
+.forecast .forecast-content .flip-card-back table img {
   height: 50px;
   width: 50px;
 }
 
-/* services section styling */
-.services,
+/* history section styling */
+.history,
 .teams {
   color: #fff;
   background: #111;
 }
-.services .title::before,
+.history .title::before,
 .teams .title::before {
   background: #fff;
 }
-.services .title::after,
+.history .title::after,
 .teams .title::after {
   background: #111;
   content: "get data";
 }
-.services .serv-content table {
+.history .his-content table {
   width: 100%;
 }
-.services .serv-content .left {
+.history .his-content .left {
   width: 50%;
 }
-.services .serv-content .left table {
+.history .his-content .left table {
   width: 100%;
 }
-.services .serv-content .right {
+.history .his-content .right {
   width: 50%;
 }
-.services .serv-content .right table {
+.history .his-content .right table {
   width: 100%;
 }
-.services .serv-content .right table img {
+.history .his-content .right table img {
   height: 50px;
   width: 50px;
 }
-.services .serv-content .left table .search_wrap {
+.history .his-content .left table .search_wrap {
   width: 500px;
   margin: 38px auto;
 }
-.services .serv-content .left table .search_wrap .search_box {
+.history .his-content .left table .search_wrap .search_box {
   position: relative;
   width: 320px;
   height: 50px;
 }
 
-.services .serv-content .left table .search_wrap .search_box .input {
+.history .his-content .left table .search_wrap .search_box .input {
   position: absolute;
   top: 0;
   left: 0;
@@ -537,7 +537,7 @@ section .title::after {
   font-size: 18px;
 }
 
-.services .serv-content .left table .search_wrap .search_box .btn {
+.history .his-content .left table .search_wrap .search_box .btn {
   position: absolute;
   top: 0;
   right: 0;
@@ -548,12 +548,12 @@ section .title::after {
   cursor: pointer;
 }
 
-.services .serv-content .left table .search_wrap .search_box .btn:hover {
+.history .his-content .left table .search_wrap .search_box .btn:hover {
   background: green;
 }
 
-.services
-  .serv-content
+.history
+  .his-content
   .left
   table
   .search_wrap.search_wrap_6
@@ -562,13 +562,7 @@ section .title::after {
   color: #000;
   border-radius: 50px;
 }
-.services
-  .serv-content
-  .left
-  table
-  .search_wrap.search_wrap_6
-  .search_box
-  .btn {
+.history .his-content .left table .search_wrap.search_wrap_6 .search_box .btn {
   width: 125px;
   height: 35px;
   top: 8px;
@@ -580,18 +574,12 @@ section .title::after {
   justify-content: center;
 }
 
-.services
-  .serv-content
-  .left
-  table
-  .search_wrap.search_wrap_6
-  .search_box
-  .btn {
+.history .his-content .left table .search_wrap.search_wrap_6 .search_box .btn {
   border-radius: 25px;
 }
 
-.services
-  .serv-content
+.history
+  .his-content
   .left
   table
   .search_wrap.search_wrap_6
@@ -600,8 +588,8 @@ section .title::after {
   padding-right: 145px;
 }
 
-.services
-  .serv-content
+.history
+  .his-content
   .left
   table
   .search_wrap.search_wrap_6
@@ -611,14 +599,14 @@ section .title::after {
   padding-right: 15px;
 }
 
-.services .serv-content .right table .text {
+.history .his-content .right table .text {
   font-size: 25px;
   font-weight: 500;
   text-align: center;
   margin: 10px 0 7px 0;
 }
 
-.services .serv-content .right table .bottom {
+.history .his-content .right table .bottom {
   border: none;
   border-radius: 6px;
   outline: 0;
@@ -632,14 +620,14 @@ section .title::after {
   font-size: 18px;
 }
 
-.services .serv-content .right table h1 {
+.history .his-content .right table h1 {
   font-size: 36px;
   font-weight: 600;
   text-align: center;
   margin: 10px 0 7px 0;
 }
 
-.services .serv-content .right table p {
+.history .his-content .right table p {
   font-size: 22px;
   text-align: center;
   font-weight: 400;
@@ -759,7 +747,7 @@ footer span a:hover {
 
 /* responsive media query start */
 @media (max-width: 1104px) {
-  .about .about-content .left img {
+  .forecast .forecast-content .left img {
     height: 350px;
     width: 350px;
   }
@@ -821,31 +809,35 @@ footer span a:hover {
   .home .home-content .right {
     flex: 100%;
   }
-  .services .serv-content .left {
+  .history .his-content .left {
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
   }
-  .services .serv-content .right {
+  .history .his-content .right {
     flex: 100%;
   }
   .max-width {
     max-width: 930px;
   }
-  .about .about-content .column {
+  .forecast .forecast-content .column {
     width: 100%;
   }
-  .about .about-content .left {
+  .forecast .forecast-content .left {
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
   }
-  .about .about-content .right {
+  .forecast .forecast-content .right {
     flex: 100%;
   }
-  .services .serv-content .card {
+  .history .his-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
+  }
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
   }
 }
 
@@ -862,7 +854,7 @@ footer span a:hover {
   .home .home-content a {
     font-size: 20px;
   }
-  .services .serv-content .card {
+  .history .his-content .card {
     width: 100%;
   }
 }
@@ -874,8 +866,7 @@ footer span a:hover {
   .home .home-content .text-3 {
     font-size: 27px;
   }
-  .about .about-content .right .text,
-  .skills .skills-content .left .text {
+  .forecast .forecast-content .right .text {
     font-size: 19px;
   }
   .contact .right form .fields {
